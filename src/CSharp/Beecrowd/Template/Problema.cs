@@ -1,7 +1,6 @@
-﻿namespace Beecrowd.Template
+﻿namespace Beecrowd.Template;
+
+internal abstract class Problema
 {
-    internal abstract class Problema
-    {
-        public abstract void PMain(string problema);
-    }
+    public abstract void PMain(string problema);
 }

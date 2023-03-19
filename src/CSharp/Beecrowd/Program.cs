@@ -1,4 +1,5 @@
 ﻿using Beecrowd.Iniciante.Inicio;
+using Beecrowd.Iniciante.Sequencial;
 using Beecrowd.Template;
 
 namespace Beecrowd.src;
@@ -10,7 +11,9 @@ internal static class Program
         //* Lista de problemas.
         Dictionary<string, Problema> listaProblemas = new()
         {
-            { "1000", new B1000() }
+            { "1000", new B1000() },
+            { "1001", new B1001() },
+            { "1002", new B1002() },
         };
 
         string? comando;
@@ -20,7 +23,9 @@ internal static class Program
             string? problema = Console.ReadLine();
 
             //* Encontra e executa o problema informado.
+            Console.WriteLine();
             ExecutarProblema(listaProblemas, problema);
+            Console.WriteLine();
 
             Mensagem(1);
             comando = Console.ReadLine();
@@ -33,11 +38,13 @@ internal static class Program
         {
             if (problemas.TryGetValue(problema, out Problema? problemaEncontrado))
             {
+                Console.WriteLine();
+                //* Encontra e executa o problema informado.
                 problemaEncontrado.PMain(problema);
+                Console.WriteLine();
             }
             else
             {
-                Console.WriteLine();
                 Console.WriteLine($"O problema informado não existe.");
             }
 
@@ -50,12 +57,10 @@ internal static class Program
     {
         if (operacao == 0)
         {
-            Console.WriteLine();
             Console.WriteLine($"Deseja executar o problema B{problema} novamente? [S/N]");
         }
         else
         {
-            Console.WriteLine();
             Console.WriteLine("Deseja executar o todo o programa novamente? [S/N]");
         }
     }
