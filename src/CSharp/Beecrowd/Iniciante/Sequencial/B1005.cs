@@ -3,6 +3,7 @@
 using System.Globalization;
 
 namespace Beecrowd.Iniciante.Sequencial;
+
 internal class B1005 : Problema
 {
     public override void PMain(string problema)
