@@ -2,6 +2,7 @@
 using Beecrowd.Template;
 
 namespace Beecrowd.Iniciante.Sequencial;
+
 internal class B1010 : Problema
 {
     public override void PMain(string problema)
