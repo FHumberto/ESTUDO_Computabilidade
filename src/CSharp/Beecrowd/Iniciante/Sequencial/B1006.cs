@@ -1,6 +1,5 @@
-﻿using Beecrowd.Template;
-
-using System.Globalization;
+﻿using System.Globalization;
+using Beecrowd.Template;
 
 namespace Beecrowd.Iniciante.Sequencial;
 
@@ -21,5 +20,4 @@ internal class B1006 : Problema
 
         Console.WriteLine($"MEDIA = {media.ToString("F1", CultureInfo.InvariantCulture)}");
     }
-
 }
