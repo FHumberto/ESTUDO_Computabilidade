@@ -9,6 +9,7 @@ internal static class Program
 {
     public static void Main()
     {
+        //* O beecrowd usa o C# 7.0
         //* Lista de problemas.
         Dictionary<string, Problema> listaProblemas = new()
         {
@@ -37,6 +38,7 @@ internal static class Program
             { "1035", new B1035() },
             { "1036", new B1036() },
             { "1037", new B1037() },
+            { "1038", new B1038() },
         };
 
         string? comando;
