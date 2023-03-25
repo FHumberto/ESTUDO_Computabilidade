@@ -1,4 +1,5 @@
 ﻿using Beecrowd.Iniciante.Inicio;
+using Beecrowd.Iniciante.Selecao;
 using Beecrowd.Iniciante.Sequencial;
 using Beecrowd.Template;
 
@@ -33,6 +34,7 @@ internal static class Program
             { "1019", new B1019() },
             { "1020", new B1020() },
             { "1021", new B1021() },
+            { "1035", new B1035() },
         };
 
         string? comando;
