@@ -47,6 +47,7 @@ internal class B1040 : Problema
             {
                 Console.WriteLine("Aluno reprovado.");
             }
+
             Console.WriteLine($"Media final: {mediaFinal.ToString("F1", CultureInfo.InvariantCulture)}");
         }
     }
