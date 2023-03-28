@@ -42,6 +42,7 @@ internal static class Program
             { "1040", new B1040() },
             { "1041", new B1041() },
             { "1042", new B1042() },
+            { "1043", new B1043() },
         };
 
         string? comando;
