@@ -7,7 +7,7 @@ internal class B1050 : Problema
     {
         Console.WriteLine($"B{problema} - DDD\n");
 
-        Dictionary<int, string> dddCidades = new Dictionary<int, string>()
+        Dictionary<int, string> dddCidades = new()
         {
             { 61, "Brasilia" },
             { 71, "Salvador" },

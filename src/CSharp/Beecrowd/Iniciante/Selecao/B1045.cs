@@ -28,6 +28,7 @@ internal class B1045 : Problema
         {
             Console.WriteLine("TRIANGULO ACUTANGULO");
         }
+
         if (pontos[0] == pontos[1] && pontos[1] == pontos[2])
         {
             Console.WriteLine("TRIANGULO EQUILATERO");
