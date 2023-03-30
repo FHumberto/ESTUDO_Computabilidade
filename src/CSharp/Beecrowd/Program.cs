@@ -46,6 +46,7 @@ internal static class Program
             { "1044", new B1044() },
             { "1045", new B1045() },
             { "1046", new B1046() },
+            { "1049", new B1049() },
             { "1050", new B1050() },
             { "1052", new B1052() },
         };
