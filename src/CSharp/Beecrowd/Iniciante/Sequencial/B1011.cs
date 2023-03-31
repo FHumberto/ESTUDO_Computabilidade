@@ -1,5 +1,5 @@
-﻿using System.Globalization;
-using Beecrowd.Template;
+﻿using Beecrowd.Template;
+using System.Globalization;
 
 namespace Beecrowd.Iniciante.Sequencial;
 
