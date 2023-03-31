@@ -30,7 +30,9 @@ internal class B1049 : Problema
                                  select condicao)
         {
             Console.WriteLine(condicao.Value);
+#pragma warning disable S1751 // Loops with at most one iteration should be refactored
             break;
+#pragma warning restore S1751 // Loops with at most one iteration should be refactored
         }
     }
 }
