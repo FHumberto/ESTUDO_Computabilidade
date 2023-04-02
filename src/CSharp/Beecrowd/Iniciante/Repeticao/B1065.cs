@@ -5,7 +5,7 @@ internal class B1065 : Problema
 {
     public override void PMain(string problema)
     {
-        Console.WriteLine($"B{problema} - Números Ímpares\n");
+        Console.WriteLine($"B{problema} - Pares entre Cinco Números\n");
 
         int[] numeros = new int[5];
         int pares = 0;
