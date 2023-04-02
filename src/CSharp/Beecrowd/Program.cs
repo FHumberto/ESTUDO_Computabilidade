@@ -4,7 +4,7 @@ using Beecrowd.Iniciante.Selecao;
 using Beecrowd.Iniciante.Sequencial;
 using Beecrowd.Template;
 
-namespace Beecrowd.src;
+namespace Beecrowd;
 
 internal static class Program
 {
@@ -54,6 +54,7 @@ internal static class Program
             { "1060", new B1060() },
             { "1064", new B1064() },
             { "1067", new B1067() },
+            { "1070", new B1070() },
         };
 
         string? comando;
@@ -69,8 +70,9 @@ internal static class Program
 
             Mensagem(1);
             comando = Console.ReadLine();
-        } while (comando == "S" || comando == "s");
+        } while (comando is "S" or "s");
     }
+
     public static void ExecutarProblema(Dictionary<string, Problema> problemas, string problema)
     {
         string? comando;
@@ -90,7 +92,7 @@ internal static class Program
 
             Mensagem(0, problema);
             comando = Console.ReadLine();
-        } while (comando == "S" || comando == "s");
+        } while (comando is "S" or "s");
     }
 
     public static void Mensagem(int operacao, string? problema = null)
