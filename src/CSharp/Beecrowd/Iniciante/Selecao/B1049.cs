@@ -14,7 +14,7 @@ internal class B1049 : Problema
             grupos[i] = Console.ReadLine();
         }
 
-        Dictionary<string[], string> condicoes = new Dictionary<string[], string>
+        Dictionary<string[], string> condicoes = new()
         {
             { new string[] { "vertebrado", "ave", "carnivoro" }, "aguia" },
             { new string[] { "vertebrado", "ave", "onivoro" }, "pomba" },
@@ -25,9 +25,9 @@ internal class B1049 : Problema
             { new string[] { "invertebrado", "anelideo", "hematofago" }, "sanguessuga" },
             { new string[] { "invertebrado", "anelideo", "onivoro" }, "minhoca" }
         };
-        foreach (var condicao in from condicao in condicoes
-                                 where Enumerable.SequenceEqual(grupos, condicao.Key)
-                                 select condicao)
+        foreach (KeyValuePair<string[], string> condicao in from condicao in condicoes
+                                                            where Enumerable.SequenceEqual(grupos, condicao.Key)
+                                                            select condicao)
         {
             Console.WriteLine(condicao.Value);
 #pragma warning disable S1751 // Loops with at most one iteration should be refactored

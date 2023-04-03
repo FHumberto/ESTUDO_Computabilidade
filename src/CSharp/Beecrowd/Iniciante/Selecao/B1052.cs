@@ -9,7 +9,7 @@ internal class B1052 : Problema
 
         int valor = int.Parse(Console.ReadLine());
 
-        Dictionary<int, string> mes = new Dictionary<int, string>()
+        Dictionary<int, string> mes = new()
         {
             { 1, "January" },
             { 2, "February" },
