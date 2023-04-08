@@ -9,17 +9,16 @@ internal class B1079 : Problema
         Console.WriteLine($"B{problema} - Médias Ponderadas\n");
 
         int casos = int.Parse(Console.ReadLine());
-        double[] valores = new double[3];
-
         for (int i = 0; i < casos; i++)
         {
-            for (int y = 0; y < valores.Length; y++)
-            {
-                valores = Array.ConvertAll(Console.ReadLine().Split(' '), v => double.Parse(v, CultureInfo.InvariantCulture));
-                double media = ((valores[0] * 2) + (valores[1] * 3) + (valores[2] * 5)) / 10.0;
+            string[] linha = Console.ReadLine().Split(' ');
 
-                Console.WriteLine($"{media.ToString("F1", CultureInfo.InvariantCulture)}");
-            }
+            double a = double.Parse(linha[0], CultureInfo.InvariantCulture);
+            double b = double.Parse(linha[1], CultureInfo.InvariantCulture);
+            double c = double.Parse(linha[2], CultureInfo.InvariantCulture);
+            double media = ((a * 2) + (b * 3) + (c * 5)) / 10.0;
+
+            Console.WriteLine($"{media.ToString("F1", CultureInfo.InvariantCulture)}");
         }
     }
 }
