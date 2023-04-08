@@ -17,7 +17,15 @@ internal class B1066 : Problema
         {
             numeros[i] = int.Parse(Console.ReadLine());
 
-            _ = (numeros[i] > 0) ? positivo++ : negativo++;
+            if (numeros[i] > 0)
+            {
+                positivo++;
+            }
+            else if (numeros[i] < 0)
+            {
+                negativo++;
+            }
+
             _ = (numeros[i] % 2 == 0) ? par++ : impar++;
         }
 
