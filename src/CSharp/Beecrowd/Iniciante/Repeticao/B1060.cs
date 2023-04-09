@@ -14,7 +14,9 @@ internal class B1060 : Problema
         {
             float numero = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             if (numero > 0)
+            {
                 positivos++;
+            }
         }
 
         Console.WriteLine($"{positivos} valores positivos");

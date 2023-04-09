@@ -15,6 +15,6 @@ internal class B1007 : Problema
             valor[i] = int.Parse(Console.ReadLine());
         }
 
-        Console.WriteLine($"DIFERENCA = {valor[0] * valor[1] - valor[2] * valor[3]}");
+        Console.WriteLine($"DIFERENCA = {(valor[0] * valor[1]) - (valor[2] * valor[3])}");
     }
 }

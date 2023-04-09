@@ -9,9 +9,9 @@ internal class B1020 : Problema
 
         int idade = int.Parse(Console.ReadLine());
 
-        int ano = (idade / 365);
-        int mes = (idade % 365) / 30;
-        int dia = (idade % 365) % 30;
+        int ano = idade / 365;
+        int mes = idade % 365 / 30;
+        int dia = idade % 365 % 30;
 
         Console.WriteLine($"{ano} ano(s)");
         Console.WriteLine($"{mes} mes(es)");

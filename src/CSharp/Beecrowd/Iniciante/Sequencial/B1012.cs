@@ -14,9 +14,9 @@ internal class B1012 : Problema
         double b = double.Parse(linha[1], CultureInfo.InvariantCulture);
         double c = double.Parse(linha[2], CultureInfo.InvariantCulture);
 
-        double triangulo = (a * c) / 2;
+        double triangulo = a * c / 2;
         double raio = 3.14159 * Math.Pow(c, 2);
-        double trapezio = ((a + b) * c) / 2;
+        double trapezio = (a + b) * c / 2;
         double quadrado = b * b;
         double retangulo = a * b;
 

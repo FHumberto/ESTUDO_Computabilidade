@@ -11,7 +11,7 @@ internal class B1017 : Problema
         int tempo = int.Parse(Console.ReadLine());
         int velocidadeMedia = int.Parse(Console.ReadLine());
 
-        double consumo = (tempo * velocidadeMedia) / 12.0;
+        double consumo = tempo * velocidadeMedia / 12.0;
 
         Console.WriteLine(consumo.ToString("F3", CultureInfo.InvariantCulture));
     }

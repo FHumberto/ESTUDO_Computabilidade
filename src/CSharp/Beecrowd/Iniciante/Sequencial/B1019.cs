@@ -9,9 +9,9 @@ internal class B1019 : Problema
 
         int duracao = int.Parse(Console.ReadLine());
 
-        int hora = (duracao / 60) / 60;
-        int minuto = (duracao / 60) % 60;
-        int segundo = (duracao % 60) % 60;
+        int hora = duracao / 60 / 60;
+        int minuto = duracao / 60 % 60;
+        int segundo = duracao % 60 % 60;
 
         Console.WriteLine($"{hora}:{minuto}:{segundo}");
     }

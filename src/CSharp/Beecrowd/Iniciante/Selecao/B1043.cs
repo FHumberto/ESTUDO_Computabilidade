@@ -17,7 +17,7 @@ internal class B1043 : Problema
         }
         else
         {
-            float area = (((valores[0] + valores[1]) * valores[2]) / 2);
+            float area = (valores[0] + valores[1]) * valores[2] / 2;
             Console.WriteLine($"Area = {area.ToString("F1", CultureInfo.InvariantCulture)}");
         }
     }

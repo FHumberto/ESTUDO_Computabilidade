@@ -17,7 +17,7 @@ internal class B1015 : Problema
             y[i] = double.Parse(linha[1], CultureInfo.InvariantCulture);
         }
 
-        double distancia = Math.Sqrt(Math.Pow((x[1] - x[0]), 2) + Math.Pow((y[1] - y[0]), 2));
+        double distancia = Math.Sqrt(Math.Pow(x[1] - x[0], 2) + Math.Pow(y[1] - y[0], 2));
 
         Console.WriteLine(distancia.ToString("F4", CultureInfo.InvariantCulture));
     }

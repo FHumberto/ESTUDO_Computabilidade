@@ -9,7 +9,7 @@ internal class B1036 : Problema
         Console.WriteLine($"B{problema} - Fórmula de Bhaskara\n");
 
         double[] coeficientes = Array.ConvertAll(Console.ReadLine().Split(' '), s => double.Parse(s, CultureInfo.InvariantCulture));
-        double delta = Math.Pow(coeficientes[1], 2) - 4 * coeficientes[0] * coeficientes[2];
+        double delta = Math.Pow(coeficientes[1], 2) - (4 * coeficientes[0] * coeficientes[2]);
         if (delta < 0 || coeficientes[0] <= 0)
         {
             Console.WriteLine("Impossivel calcular");
