@@ -1,9 +1,4 @@
 ﻿using Beecrowd.Template;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Beecrowd.Iniciante.Repeticao;
 internal class B1134 : Problema
@@ -31,7 +26,7 @@ internal class B1134 : Problema
                     combustivel[2] += 1;
                     break;
             }
-        } while(codigo != 4);
+        } while (codigo != 4);
 
         Console.WriteLine("MUITO OBRIGADO");
         Console.WriteLine($"Alcool: {combustivel[0]}");
