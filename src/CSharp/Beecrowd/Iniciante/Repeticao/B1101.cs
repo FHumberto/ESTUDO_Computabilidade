@@ -1,9 +1,5 @@
 ﻿using Beecrowd.Template;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Beecrowd.Iniciante.Repeticao;
 internal class B1101 : Problema
@@ -18,19 +14,25 @@ internal class B1101 : Problema
             int m = int.Parse(linha[0]);
             int n = int.Parse(linha[1]);
 
-            if(m == 0 || n == 0 || m < 0 || n < 0)
+            if (m == 0 || n == 0 || m < 0 || n < 0)
             {
                 return;
             }
             else
             {
-                int inicio = 0, fim = 0;
-                string numeros = default;
+                int maior = Math.Max(m, n);
+                int menor = Math.Min(m, n);
+                int soma = 0;
 
-                for(int i = inicio; i <= fim; i++)
+                var texto = new StringBuilder();
+
+                for (int i = menor; i <= maior; i++)
                 {
-
+                    texto.Append($"{i} ");
+                    soma += i;
                 }
+
+                Console.WriteLine($"{texto}Sum={soma}");
             }
         }
     }
