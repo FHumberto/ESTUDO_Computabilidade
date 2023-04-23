@@ -16,7 +16,7 @@ internal class B1116 : Problema
             int x = int.Parse(linha[0]);
             int y = int.Parse(linha[1]);
 
-            if (x < y)
+            if (y == 0)
             {
                 Console.WriteLine("divisao impossivel");
             }
