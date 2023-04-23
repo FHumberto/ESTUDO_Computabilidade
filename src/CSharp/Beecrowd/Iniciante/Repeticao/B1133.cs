@@ -13,6 +13,8 @@ internal class B1133 : Problema
         int menor = Math.Min(x, y);
         int maior = Math.Max(x, y);
 
+        menor++;
+
         for (int i = menor; i < maior; i++)
         {
             if (i % 5 == 2 || i % 5 == 3)
