@@ -89,6 +89,7 @@ internal static class Program
             { "1172", new B1172() },
             { "1173", new B1173() },
             { "1174", new B1174() },
+            { "1177", new B1177() },
             { "1180", new B1180() },
         };
 
