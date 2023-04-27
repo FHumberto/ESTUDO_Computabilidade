@@ -11,6 +11,7 @@ internal class B1181 : Problema
 {
     public override void PMain(string problema)
     {
+        Console.WriteLine($"B{problema} - Coluna na Matriz\n");
 
         double[,] matriz = new double[12,12];
 
