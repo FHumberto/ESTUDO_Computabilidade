@@ -1,9 +1,4 @@
 ﻿using Beecrowd.Template;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Beecrowd.Iniciante.Repeticao;
 internal class B1157 : Problema
@@ -14,9 +9,9 @@ internal class B1157 : Problema
 
         int valor = int.Parse(Console.ReadLine());
 
-        for(int i = 1; i <= valor; i++)
+        for (int i = 1; i <= valor; i++)
         {
-            if(valor % i == 0)
+            if (valor % i == 0)
             {
                 Console.WriteLine(i);
             }
