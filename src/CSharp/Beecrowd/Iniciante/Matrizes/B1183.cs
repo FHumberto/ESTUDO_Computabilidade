@@ -1,10 +1,5 @@
 ﻿using Beecrowd.Template;
-using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Beecrowd.Iniciante.Matrizes;
 internal class B1183 : Problema
@@ -14,14 +9,26 @@ internal class B1183 : Problema
         Console.WriteLine($"B{problema} - Acima da Diagonal Principal\n");
 
         double[,] matriz = new double[12, 12];
+        double aux = 0;
         char entrada = char.Parse(Console.ReadLine());
 
-        for(int i = 0; i < 12; i++)
+        for (int i = 0; i < 12; i++)
         {
-            for(int j= 0; j < 12; j++)
+            for (int j = 0; j < 12; j++)
             {
                 matriz[i, j] = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+                if (i != j && i < j)
+                {
+                    aux += matriz[i, j];
+                }
             }
         }
+
+        if (entrada == 'M')
+        {
+            aux /= 66.0;
+        }
+        Console.WriteLine(aux.ToString("F1", CultureInfo.InvariantCulture));
     }
 }
